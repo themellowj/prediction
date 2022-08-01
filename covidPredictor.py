@@ -31,7 +31,7 @@ print(f'Accuracy:{round(accuracy*100,3)} %')
 y0 = model.predict(x)
 
 #### PREDICTION ####
-days = 50
+days = 75
 print('-'*30);print('PREDICTION');print('-'*30)
 print(f'Prediction – Cases after {days} days:',end='')
 print(round(int(model.predict(polyFeat.fit_transform([[192+days]])))/1000000,2),'Million')
